@@ -34,8 +34,6 @@ under the License.
         <scala.version>2.11.12</scala.version>
         <sbt.version>0.13</sbt.version>
 
-        <specs2.version>2.3.13</specs2.version>
-
         <compiler.plugin.version>3.8.0</compiler.plugin.version>
         <project-info-reports.plugin.version>3.0.0</project-info-reports.plugin.version>
         <site.plugin.version>3.7.1</site.plugin.version>
@@ -54,12 +52,6 @@ under the License.
             <version>${scala.version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.specs2</groupId>
-            <artifactId>specs2_2.11</artifactId>
-            <version>${specs2.version}</version>
-            <scope>test</scope>
-        </dependency>
     </dependencies>
 
     <build>
@@ -135,18 +127,6 @@ under the License.
 
     <reporting>
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-project-info-reports-plugin</artifactId>
-                <version>${project-info-reports.plugin.version}</version>
-                <reportSets>
-                    <reportSet>
-                        <reports>
-                            <report>index</report>
-                        </reports>
-                    </reportSet>
-                </reportSets>
-            </plugin>
 
             <plugin>
                 <groupId>org.scoverage</groupId>
